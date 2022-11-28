@@ -10,7 +10,18 @@ if(isset($_POST["submit"])){
         $phn=$_POST['phone'];
         $password=$_POST['password'];
 
+        $emsql="select * from sign_up where Email='$usemail'";
+
+      $emres=mysqli_query($conn,$emsql);
+
+      if (mysqli_num_rows($emres) > 0) {
         
+       
+              $emailerror="email already exist";
+              echo"<script> alert('this email already exists')</script>";
+              
+        }
+      else{
         $enpass=base64_encode($password);
         $sql = "INSERT INTO sign_up(Name,Email,Pass,phn_number) value ('$usname','$usemail','$enpass','$phn')";
       
@@ -23,9 +34,10 @@ if(isset($_POST["submit"])){
 		}else{
             header("Location:login.php");
         }
-        
-        
     }
+        
+    
+}
 
 
 ?>

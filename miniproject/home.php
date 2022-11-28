@@ -26,8 +26,8 @@ href="style-home.css">
                 <ul>
                 
                     <li ><a href="login.php" >Login</a></li>
-                    <li><a href="#contact">Services</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="service.php">Services</a></li>
+                    <li><a href="about.php">About</a></li>
                     <li  ><a  href="home.php">Home</a></li>
                 
                 </ul>

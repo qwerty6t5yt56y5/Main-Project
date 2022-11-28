@@ -14,7 +14,7 @@ $nameerror=$phnerror=$add=$petError=$petBreed=$dietError=NULL;
   $pet=$_POST['pets']; 
   $breed=$_POST['breed'];
   $sex=$_POST['sex'];
-  $diet=$_POST['diet'];
+  $diet=$_POST['diet']; 
   $payment=$_POST['payment'];
   if($payment=="1-day"){
                     
@@ -65,7 +65,7 @@ if(empty($pet)){
   $petE="Please choose an option";
 }
 
-if(!$nameerror &&!$phnerror&&!$petBreed&&!$petError&&!$dietError&&!$petE&&!$gend)
+if(!$nameerror &&! $phnerror &&! $petBreed &&! $petError &&! $dietError &&! $petE&&! $gend)
 {
    
   $sql = "INSERT INTO pet_sitting(name,number,address,pet_name,pets,breed,sex,diet,payment,total,userid) value ('$usname','$phn','$address','$petname','$pet','$breed','$sex','$diet','$payment','$price','$userid')";
@@ -100,6 +100,9 @@ else{
         <link rel="stylesheet" href="form_style.css">
         <title>sitting-form</title>
 </head>
+<?php
+include "header.php";
+   ?>
 <body>
     <div class="content">
         <div class="sideimg">

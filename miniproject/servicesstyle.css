@@ -1,0 +1,218 @@
+ul {
+    list-style-type:none;
+   
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    font-size: 18px;
+    display:block;
+    position:absolute;
+    float: right;
+    right:10px;
+    top:20px;
+  }
+  
+ li {
+  float:right;
+  display:block;
+  font-size: 20px;
+  font-weight: bold;
+
+  
+ }
+
+  li a,.dropbtn {
+  
+    display:block;
+    color: rgb(18, 18, 18);
+    text-align: center;
+    padding: 15px 18px;
+    text-decoration:none;
+    
+  }
+ 
+  li a:hover {
+    background-color: #ef9336;
+    color: azure;
+    border-radius: 8px;
+  }
+  .imgclass{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgclass img{
+    height: 110px;
+    
+    margin-top: -10px;  
+  }
+  h2{
+   
+    margin-top: 20px;
+    padding-top: 20px;
+    font-size: 100px;
+    font-family: 'Times New Roman';
+  }
+  
+  .services{
+    margin-top:100px ;
+    height:50rem;
+    width: 100%;
+    
+  }
+ 
+  
+  .donate-button{
+    
+    
+    margin-top:-50%;
+    margin-left: 500px;
+    position: relative;
+    
+    
+    
+   
+  }
+  .donate-button a
+  {
+    font-family: monospace;
+    padding: 15px 30px;
+    background-color: #ef9336;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color:rgb(6, 6, 6)
+    
+  }
+  .donate-button a:hover{
+    background-color: #f07a04;
+    cursor: pointer;
+
+  }
+  .textDiv{
+    margin-top:-20%;
+    margin-left: 50%;;
+    font-family: verdana;
+    background-color: aqua;
+    width:300px;
+    height:100px;
+  
+    background:black;
+  }
+  h4{
+    text-align: center;
+    align-items: center;
+    font-size: 32px;
+    color: rgb(119, 69, 69);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 300px;
+    
+  }
+  div{
+    width: 100%;
+    height: 100%;
+  }
+  .des{
+    margin-top: 80px;
+    width: 100%;
+    height: 50%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+   
+    background-color:transparent ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+.parallax{
+ background-image: url("./homepage.jpg"); 
+ background-attachment: fixed;
+}
+  .item{
+    box-shadow: rgba(0, 0, 0, 0.35) 15px 15px 15px;
+    margin-top: -300px;
+    background-color: #ef9336;
+    max-width: 15rem;
+    max-height: 20rem;
+    padding: 2.5px;
+    font-size: 15px;
+    font-family:Bahnschrift SemiBold;
+    padding-left: 20px;
+  }
+  h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+  }
+  .item a{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    color: black;
+    border: 3px solid;  
+    text-decoration: none;
+   width: 120px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    position: absolute;
+    background: white;
+    text-align: center;
+    padding: 12px 18px;
+    border-radius: 30px;
+    display:block;
+  }
+  .items{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+     
+  }
+    a
+    {
+    cursor: pointer;
+    }
+.first{
+  background-color: #d4a06c;
+  margin-left: 10px;
+
+}
+.second
+{
+  margin-left: 70px;
+  background-color: rgb(155, 155, 229);
+}
+.third
+{
+  margin-left: 70px;
+  background-color: rgb(229, 126, 126);
+}
+.first a
+{
+  color: #bc7d3a;
+  margin-top: 25px;
+  
+}
+.second a
+{
+  margin-top: 40px;
+  color: rgb(129, 129, 210);
+}
+.third a
+{
+  margin-top: 40px;
+  color: rgb(214, 101, 101);
+  
+}
+.third a:hover {
+  background-color:  rgb(230, 98, 98);
+  color: azure;
+  border-radius: 30px;
+}
+.second a:hover {
+  background-color:  rgb(109, 109, 224);
+  color: azure;
+  border-radius: 30px;
+}
+.first a:hover {
+  background-color:#e0964b ;
+  color: azure;
+  border-radius: 30px;
+}

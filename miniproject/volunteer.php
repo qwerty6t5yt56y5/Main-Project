@@ -55,7 +55,7 @@ if(isset($_POST['submit'])){
     $result=mysqli_query($conn,$sql);
     if(!$result){
         echo "not inserted";
-    }
+    } 
 }
 }
 ?>
