@@ -119,6 +119,7 @@ $username=$_SESSION['username'];
             <td><img src="img/happy1.jpg"></td>
             <td><img src="img/happy2.jpg"></td>
             <td><img src="img/happy3.jpg"></td>
+            
 
 </tr>
 <tr>
@@ -126,6 +127,8 @@ $username=$_SESSION['username'];
     <img src="img/happy4.jpg"></td>
             <td class="pictwo">
                 <img src="img/happy5.jpg"></td>
+                <td class="pictwo">
+                <img src="img/pet-sitting.jpg"></td>
 </tr>
 </table>
 <h2 class="capsi">Meet Our Happy Customers</h2>

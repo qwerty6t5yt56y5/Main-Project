@@ -5,11 +5,12 @@ session_start();
 if(isset($_POST["submit"])){
 
 
-        $usname=$_POST['username'];
-        $usemail=$_POST['email'];
-        $phn=$_POST['phone'];
-        $password=$_POST['password'];
+$usname=$_POST['username'];
+$usemail=$_POST['email'];
+$phn=$_POST['phone'];
+$password=$_POST['password'];
 
+<<<<<<< Updated upstream
         $emsql="select * from sign_up where Email='$usemail'";
 
       $emres=mysqli_query($conn,$emsql);
@@ -38,16 +39,32 @@ if(isset($_POST["submit"])){
         
     
 }
+=======
+
+$enpass=base64_encode($password);
+$sql = "INSERT INTO sign_up(Name,Email,Pass,phn_number) value ('$usname','$usemail','$enpass','$phn')";
+
+$query=mysqli_query($conn,$sql);
+// $last_id = mysqli_insert_id($conn);
+>>>>>>> Stashed changes
 
 
+if(!$query){
+echo "not";
+}else{
+header("Location:login.php");
+}
+
+
+}
 ?>
+
 <html>
     <head><title>sign_up page</title>
     <link rel="stylesheet" href="signup-styles.css">
 	
-	<script type="text/javascript" src="validation.js">
-</script>
-</head>
+	
+
 <script>  
             function verifyPassword() 
             {  
@@ -91,7 +108,9 @@ if(isset($_POST["submit"])){
             
         }
             </script>
+            </head>
     <body>
+       
     <div class="container">
 	<div class="header">
 		<h2 style='color:white'>Create Account</h2>
@@ -99,7 +118,7 @@ if(isset($_POST["submit"])){
 	<form id="form" class="form" action="#" method='POST'>
 		<div class="form-control">
 			
-			<input type="text" placeholder="Enter your name" id="username" name="username" />
+			<input type="text" placeholder="Enter your name" id="username" name="username" required />
 			<i class="fas fa-check-circle"></i>
 			<i class="fas fa-exclamation-circle"></i>
 			<small>Error message</small>
