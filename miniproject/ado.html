@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        display:flex ;
+        justify-content: center;
+        flex-wrap: wrap;
+         
+
+    }
+    .card:hover {
+background-color: rgb(62,62,62);
+color: white;
+cursor: pointer;
+transform: scale (1.03);
+transition: all 1s ease;
+}
+    body{
+        background-color: grey;
+    }
+    .card{
+        margin-top: 20px;
+        background: white;
+        width:220px;
+        height: 400px;
+        margin :10px;
+        border-radius: 15px;
+    }
+    .cardimage{
+       background-size: cover;
+        height: 15px;
+        margin-bottom: 15px;
+    }
+    .text{
+margin-top: 220px;
+    }
+    .cardimage img{
+       
+        height: 200px;
+        width: 220px;
+    }
+    .card a{
+        background-color: black;
+        color: white;
+        padding: 15px 50px;
+        display: block;
+        text-align: center;
+        margin: 10px 10px;
+
+    }
+</style>
+
+<body>
+    <section class="container">
+        <div class="card">
+        <div class="cardimage"> 
+            <img src="3.jpg"></div>
+            <div class="text">
+                <h2>Title</h2>
+                <h2>text</h2>
+                <a href="">read</a>
+            </div>
+           
+      </div>
+      <div class="card">
+        <div class="cardimage">  </div>
+            <h2>Title</h2>
+        <h2>text</h2>
+      </div>
+      </section>
+</body>
+</html>

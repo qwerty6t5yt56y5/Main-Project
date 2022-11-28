@@ -44,27 +44,27 @@ $adopc=mysqli_fetch_array($adopcount);
 </header>
     <aside>
         <div class="dashboard">
-            <div class="dashhead">
-                <h3><span>Dashboard</span></h3>
-            </div>
+           
+                <a href="admin-dash.php" >Dashboard</a>
+           
             <div class="userimg"> 
-            <img src="don.png">
+           
             
-            <a href="income.php"><span>Income </span></a>
+            <a href="income.php"> <img style="float:left" src="don.png"><span>Income </span></a>
             </div>
             <div class="userimg"> 
-            <img src="vol.png">
-             <a class="subbtn" href="admin_volunteer.php"><span>Recruitment</span></a>
-            </div>
-            <div class="userimg"> 
-            <img src="ado.png">
             
-            <a href="admin_pet.php"><span>Pet Adoption</span></a>
+             <a class="subbtn" href="admin_volunteer.php"><img  style="float:left" src="vol.png"><span>Recruitment</span></a>
             </div>
             <div class="userimg"> 
-            <img src="sit.png">
+          
             
-            <a href="sitting_admin.php"><span>Pet Sitting</span></a>
+            <a href="admin_pet.php">  <img   style="float:left"src="ado.png"><span>Pet Adoption</span></a>
+            </div>
+            <div class="userimg"> 
+         
+            
+            <a href="sitting_admin.php">   <img  style="float:left" src="sit.png"><span>Pet Sitting</span></a>
             </div>  
 
             

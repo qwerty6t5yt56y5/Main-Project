@@ -31,6 +31,35 @@
    <?php 
    include('admin-header.php');
    ?> 
+   <aside>
+        <div class="dashboard">
+           
+        <a href="admin-dash.php" >Dashboard</a>
+            <div class="userimg"> 
+           
+            
+            <a href="income.php" > <img style="float:left" src="don.png"><span>Income </span></a>
+            </div>
+            <div class="userimg"> 
+            
+             <a class="subbtn" href="admin_volunteer.php"><img  style="float:left" src="vol.png"><span>Recruitment</span></a>
+            </div>
+            <div class="userimg"> 
+          
+            
+            <a href="admin_pet.php" style=" background:rgb(143, 139, 139);
+    color:black;";>  <img   style="float:left"src="ado.png"><span>Pet Adoption</span></a>
+            </div>
+            <div class="userimg"> 
+         
+            
+            <a href="sitting_admin.php">   <img  style="float:left" src="sit.png"><span>Pet Sitting</span></a>
+            </div>  
+
+            
+        </div>
+
+    </aside>
 <div class="pet-ins-main">   
 <div class="petins">
 <h1>UPLOAD PET DETAILS</h1>

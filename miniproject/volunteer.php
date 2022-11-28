@@ -51,12 +51,12 @@ if(isset($_POST['submit'])){
     {
 
     
-    $sql="INSERT INTO volunteer_tbl(dob,time_contact,address,state,district,city,pincode,experience,gender,userid) VALUES('$dob','$time','$addr','$state','$dist','$city','$pincode','$exp','$gender','$userid')";
-    $result=mysqli_query($conn,$sql);
-    if(!$result){
-        echo "not inserted";
-    } 
-}
+                $sql="INSERT INTO volunteer_tbl(dob,time_contact,address,state,district,city,pincode,experience,gender,userid) VALUES('$dob','$time','$addr','$state','$dist','$city','$pincode','$exp','$gender','$userid')";
+                $result=mysqli_query($conn,$sql);
+                if($result){
+               header("Location:confirmation.php");
+                }
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -68,15 +68,19 @@ if(isset($_POST['submit'])){
     <title>Document</title>
     <link rel="stylesheet"
     href="volunteer_style.css">
+    
 
 </head>
 <body>
+    
     <?php
     include('header.php');?>
+     <div class="cont" id="body">
+   
     <div class="volImage"><img src="volunteer.jpg"></div>
-    <div class="volForm">        
+    <div class="volForm" >        
     <form action="#" method="POST"> 
-        <h1>welcome <?php echo $username;?> </h1>  
+        <h1>Welcome <?php echo $username;?> </h1>  
         <h1>VOLUNTEER REGISTRATION </h1>
         <div class="user">
                      
@@ -168,9 +172,13 @@ if(isset($_POST['submit'])){
                         
                     </div>
                     <br>
-                   
-                    <div class="buttonsub">
-                        <button type="submit" name="submit"href="#">Submit Now</button>
+                  <div class="buttonsub">
+                  <button type="submit" name="submit" >SUBMIT NOW</button>  
+                  </div> 
+                    
+     
+
+
 
                     </div>
 
@@ -178,5 +186,6 @@ if(isset($_POST['submit'])){
                 </div>
             </form>
         </div>
+</div>
 </body>
 </html>

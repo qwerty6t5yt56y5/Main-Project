@@ -1,7 +1,7 @@
 .volunteer{
     
     
-        
+        margin-left: 200px;
         background-color: #1d6a63;
        
         justify-content: center;
@@ -9,26 +9,61 @@
         
         
 }
-h1{
+main{
+    margin-top: 65px;
+   
+    width: 1070px;
+    margin-left: 189px;
+    background-color: #1d6a63;
+   
+}
+.volHead {
     color: white;
+    margin-left: 211px;
+    margin-top: 100px;
 }
 .sitting{
       
-    background-color: #1d6a63;
-       
+    
     justify-content: center;
-    align-items: center;
+    width: 175vh;
+    margin-top: 65px;
+    margin-left: 170px;
 }
-table{
-   background-color: #fff;
+.sitting h1{
+    margin-left: 250px;
+}
+.tablesitting table{
     border-collapse:collapse;
-    width : 50%;
 }
-table th{
+.tablevolunteer table{
+    background-color: #fff;
+    border-collapse: collapse;
+    width: 800px;
+    margin-left: 10px;
+}
+   
+.tablesitting th{
     color:black;
-    padding: 10px 30px;
+    padding: 8px;
+}
+
+.tablesitting tr{
+    padding: 30px;
+}
+.tablesitting td{
+    color:black;
+font-size: 1.2em;
+padding: 10px 5px;
+text-align: center;
+}
+
+
+.tablevolunteer th{
+    color:black;
+    padding: 8px;
     }
-table td{
+.tablevolunteer td{
     color:black;
 font-size: 1.2em;
 padding: 10px 5px;
@@ -97,8 +132,7 @@ font-family: cambria;
 .pet-det{
     float: right;
     margin-top: 40px;
-    margin-right: 40px;
-    
+    margin-right: 149px;
   
 }
 .pet-det-sbt:hover{
@@ -114,8 +148,8 @@ color: white;
 }
 .pet-ins-main{
     height: 100vh;
-    width: 100%;
-    margin-left: -10px;
+    width: 183vh;
+    margin-left: 116px;
     overflow: hidden;
 
     padding-right: 15px;
@@ -198,3 +232,72 @@ header{
     margin-top: -10px;
     margin-right: 10px;  
   }
+  aside{
+    height: 100vh;
+    width: 16%;
+    margin-left: -7px;
+    float: left;
+    position: fixed;
+    margin-top: 0px;
+    background: #98bcb8;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+}
+.dashboard a{
+    color:black;
+    font-size: 16px;
+    font-weight: bolder;
+    display:block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+   
+    box-sizing: border-box;
+    transform: .5s;
+    
+    transition-property: background;
+}
+.dashboard a:hover{
+    background:rgb(143, 139, 139);
+    color:black;
+}
+.dashhead{
+    width:100%;
+    height:50px;
+    color: black;
+    align-items: center;
+    justify-content: center;
+}
+.dashhead{
+    width:100%;
+    height:50px;
+    color: black;
+    align-items: center;
+    justify-content: center;
+}
+.dashhead h3{
+    font-size: 20px;
+    border-bottom: 1px;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.userimg{
+    display: flex; 
+    align-items: center;
+}
+
+.userimg a{
+    text-decoration: none;
+    color: white;
+    margin-left: 2px;
+    margin-top: 10px;
+    
+}
+.userimg img{
+    float:right;
+    display: flex;
+    width:40px;
+    height: 40px;
+    
+    
+}
