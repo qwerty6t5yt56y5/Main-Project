@@ -1,11 +1,15 @@
 <?php
 session_start();
 include 'connect.php';
+
 $userid=$_GET['userid'];
+
 
 //echo"<script> alert('{$curuser}')</script>";
 if(isset($_POST['submit'])){
+
 $nameerror=$phnerror=$add=$petError=$petBreed=$dietError=NULL;
+
 
   $usname=$_POST['name'];
   $phn=$_POST['number'];
@@ -42,6 +46,7 @@ else{
     echo"error";
 }
 
+
 if(!preg_match("/^([a-zA-Z' ]+)$/",$usname)){
   $nameerror="Name contains alphabets only";
 }
@@ -69,11 +74,14 @@ if(!$nameerror &&! $phnerror &&! $petBreed &&! $petError &&! $dietError &&! $pet
 {
    
   $sql = "INSERT INTO pet_sitting(name,number,address,pet_name,pets,breed,sex,diet,payment,total,userid) value ('$usname','$phn','$address','$petname','$pet','$breed','$sex','$diet','$payment','$price','$userid')";
+
+
   $query=mysqli_query($conn,$sql);
   $last_id = mysqli_insert_id($conn);
   $_SESSION['sitid']=$last_id;
-
   
+
+
   
  
   
@@ -98,7 +106,7 @@ else{
 <html>
     <head>
         <link rel="stylesheet" href="form_style.css">
-        <title>sitting-form</title>
+        <title>sitting-form</title>s            
 </head>
 <?php
 include "header.php";
@@ -110,6 +118,7 @@ include "header.php";
         </div>
     <h1>ENTER YOUR INFORMATIONS HERE </h1>
     <form class="sitting-form" action="#" method='POST'>
+
         <input type="text" placeholder="Enter Your Name"name="name" id="name"><BR><BR>
         <span style='color:red;font-size:small;'><?php if(isset($usname))echo $nameerror ?>
         <input type="text" placeholder="Enter Your Contact Number"name="number" id="number"><BR><BR>
@@ -136,13 +145,37 @@ include "header.php";
 <textarea type="text" placeholder="enter yours pet's diet details " name="diet" id="diet"></textarea><br><br>
 <select name="payment" id="payment" required>
     <option value="" disabled selected>how many days </option>
+
+        <input type="text" placeholder="Enter Your Name" name="name" id="name" required/><BR><BR>
+        <input type="text" placeholder="Enter Your Contact Number" name="number" id="number" required/><BR><BR>
+      
+        <textarea  name="address" placeholder="Enter Your Address" rows="4" cols="50" id="address" required></textarea><br><br>
+        <input type="text" placeholder="Enter Your Pet's Name" name="pet_name" id="pet_name" required/><BR><BR>
+        <select name="pets" id="pets" required>
+    <option value="Select pet" disabled selected>Select pet</option>
+  <option value="dog">DOG</option>
+  <option value="cat">CAT</option>
+  <option value="rabbit">RABBIT</option>
+  <option value="bird">BIRDS</option>
+</select>
+        <br><br>
+<input type="text" placeholder="Enter Pet Breed" name="breed" id="breed" required/><br><br>
+<select name="sex" id="sex" required>
+<option value="Select sex" disabled selected>Select sex</option>
+  <option value="female">F</option>
+  <option value="male">M</option>
+</select><br><br>
+<textarea type="text" placeholder="enter yours pet's diet details " name="diet" id="diet" required></textarea><br><br>
+<select name="payment" id="payment" required>
+    <option value="Select PAYMENT days" disabled selected>how many days </option>
+
   <option value="1-day">ONE-DAY</option>
   <option value="2-day">TWO-DAYS</option>
   <option value="3-day">THREE-DAYS</option>
   <option value="4-day">FOUR-DAYS</option>
   <option value="5-day">FIVE-DAYS</option>
 </select><br><br>
-  <input type="submit" class="subBut"name="submit" id="submit" value="proceed to billing"  >
+  <input type="submit" class="subBut"name="submit" id="submit" value="proceed to billing" onclick=verifyPassword()  >
 </form>
 
   </div>
